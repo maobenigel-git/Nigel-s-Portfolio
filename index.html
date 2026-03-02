@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nigel — Frontend & AI Engineer</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header id="header">
+    <div class="header-inner">
+      <nav class="nav">
+        <a href="#hero" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section id="hero" class="hero">
+    <div class="hero-top">
+      <h1 class="hero-name reveal-up">Hi, I'm Nigel</h1>
+    </div>
+    <div class="hero-grid">
+      <div class="hero-col hero-col--left reveal-up" style="--delay:0.2s">
+        <p class="hero-desc">I craft precise digital experiences — from pixel-perfect interfaces to intelligent automation systems that actually work.</p>
+      </div>
+      <div class="hero-col hero-col--center reveal-up" style="--delay:0.3s">
+        <div class="hero-image-wrap">
+          <div class="hero-image-placeholder">
+            <img src="assets/hero.png" alt="Nigel portrait" class="hero-image">
+          </div>
+        </div>
+      </div>
+      <div class="hero-col hero-col--right reveal-up" style="--delay:0.4s">
+        <a href="#contact" class="btn btn--primary">Get In Touch</a>
+      </div>
+    </div>
+    <div class="hero-marquee-wrap">
+      <div class="hero-marquee">
+        <span>Frontend Development</span>
+        <span class="marquee-dot">·</span>
+        <span>UI/UX Design</span>
+        <span class="marquee-dot">·</span>
+        <span>AI Engineering</span>
+        <span class="marquee-dot">·</span>
+        <span>Automation Systems</span>
+        <span class="marquee-dot">·</span>
+        <span>Frontend Development</span>
+        <span class="marquee-dot">·</span>
+        <span>UI/UX Design</span>
+        <span class="marquee-dot">·</span>
+        <span>AI Engineering</span>
+        <span class="marquee-dot">·</span>
+        <span>Automation Systems</span>
+        <span class="marquee-dot">·</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2 class="section-title reveal-up"style>About Me</h2>
+      <div class="about-body reveal-up">
+        <p>I'm a multidisciplinary engineer who lives at the intersection of design and technology. My work spans clean, performant front-end builds, thoughtful UI/UX systems, and next-gen AI-powered automation pipelines.</p>
+        <p>I believe great software is both invisible and unforgettable — invisible in its ease of use, unforgettable in its impact. Every project I touch is built with that standard in mind.</p>
+      </div>
+      <div class="about-stats reveal-up">
+        <div class="stat">
+          <span class="stat-num">3+</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">20+</span>
+          <span class="stat-label">Projects Shipped</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">15+</span>
+          <span class="stat-label">Happy Clients</span>
+        </div>
+      </div>
+      <div class="about-cta reveal-up">
+        <a href="#contact" class="btn btn--outline">Contact Me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section id="services" class="services">
+    <div class="container">
+      <h2 class="section-title section-title--white reveal-up">Services</h2>
+      <div class="services-list">
+        <div class="service-item reveal-up" style="--delay:0.1s">
+          <span class="service-num">01</span>
+          <div class="service-body">
+            <h3 class="service-name">Frontend Development</h3>
+            <p class="service-desc">Performant, accessible, pixel-perfect interfaces engineered for scale.</p>
+          </div>
+          <span class="service-arrow">→</span>
+        </div>
+        <div class="service-item reveal-up" style="--delay:0.2s">
+          <span class="service-num">02</span>
+                    <div class="service-body">
+            <h3 class="service-name">UI / UX Design</h3>
+            <p class="service-desc">Research-grounded, aesthetically precise design systems that users love.</p>
+          </div>
+          <span class="service-arrow">→</span>
+        </div>
+        <div class="service-item reveal-up" style="--delay:0.3s">
+          <span class="service-num">03</span>
+         <div class="service-body">
+            <h3 class="service-name">AI Automation</h3>
+            <p class="service-desc">Intelligent workflows and AI-powered systems that reduce friction and amplify output.</p>
+          </div>
+          <span class="service-arrow">→</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2 class="section-title reveal-up">Projects</h2>
+    </div>
+    <div class="projects-stack" id="projectsStack">
+
+      <div class="project-card" data-index="0">
+        <div class="project-card-inner">
+          <div class="project-meta">
+            <span class="project-num">01</span>
+            <div class="project-tags">
+              <span class="tag">React</span>
+              <span class="tag">AI</span>
+            </div>
+            <a href="https://notifyai.org/" class="btn btn--small btn--outline-dark">Live Project</a>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">NOTIFYAI.ORG</h3>
+            <p class="project-description">A short description of this project, what problem it solved and what technologies were used to build it.</p>
+          </div>
+         <div class="project-images">
+        <img src="assets/notify1.png" alt="Project screenshot 1" class="project-img" />
+        <img src="assets/notify2.png" alt="Project screenshot 2" class="project-img" />
+        <img src="assets/notify3.png" alt="Project screenshot 3" class="project-img" />
+        </div>
+        </div>
+      </div>
+
+      <div class="project-card" data-index="1">
+        <div class="project-card-inner">
+          <div class="project-meta">
+            <span class="project-num">02</span>
+            <div class="project-tags">
+              <span class="tag">Node.js</span>
+              <span class="tag">Automation</span>
+            </div>
+            <a href="#" class="btn btn--small btn--outline-dark">Live Project</a>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">GLOHUB.SPACE</h3>
+            <p class="project-description">A short description of this project, what problem it solved and what technologies were used to build it.</p>
+          </div>
+            <div class="project-images">
+        <img src="assets/glohub1.png" alt="Project screenshot 1" class="project-img" />
+        <img src="assets/glohub1.png" alt="Project screenshot 2" class="project-img" />
+        <img src="assets/glohub2.png" alt="Project screenshot 3" class="project-img" />
+        </div>
+        </div>
+      </div>
+
+      <div class="project-card" data-index="2">
+        <div class="project-card-inner">
+          <div class="project-meta">
+            <span class="project-num">03</span>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">UI/UX</span>
+            </div>
+            <a href="https://notifyai.org/" class="btn btn--small btn--outline-dark">Live Project</a>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">SEKANI</h3>
+            <p class="project-description">A short description of this project, what problem it solved and what technologies were used to build it.</p>
+          </div>
+             <div class="project-images">
+        <img src="assets/sekaniimage.jpg" alt="Project screenshot 1" class="project-img" />
+        <img src="assets/sekani screenshot.PNG" alt="Project screenshot 2" class="project-img" />
+        <video class="project-img" autoplay muted loop playsinline>
+        <source src="assets/mbio mbio.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+        </video>
+        </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════ SKILLS ═══════ -->
+  <section id="skills" class="skills-section">
+    <div class="section-title reveal-up">
+      <h2> Skills</h2>
+    </div>
+
+    <div class="skill-categories">
+
+      <!-- AI & Automation -->
+      <div class="skill-category-card">
+        <div class="skill-cat-header">
+          <div class="skill-cat-icon"><i class="fas fa-robot"></i></div>
+          <div>
+            <h3>AI &amp; Automation</h3>
+            <span class="skill-cat-sub">6 tools I use to build intelligent pipelines</span>
+          </div>
+        </div>
+        <div class="skill-logo-grid">
+          <div class="skill-logo-item">
+            <div class="skill-logo-wrap"><img src="https://cdn.simpleicons.org/n8n/EA4B71" alt="n8n" width="42" height="42" loading="lazy"></div>
+            <span>n8n</span>
+          </div>
+          <div class="skill-logo-item">
+            <div class="skill-logo-wrap"><img src="images/32px-Google_Apps_Script.svg.png" alt="n8n" width="42" height="42" loading="lazy"></div>
+            <span>Google App Script</span>
+          </div>
+          <div class="skill-logo-item">
+            <div class="skill-logo-wrap"><img src="https://cdn.simpleicons.org/python/3776AB" alt="Python" width="42" height="42" loading="lazy"></div>
+            <span>Python</span>
+          </div>
+          <div class="skill-logo-item">
+            <div class="skill-logo-wrap"><img src="https://cdn.simpleicons.org/tensorflow/FF6F00" alt="TensorFlow" width="42" height="42" loading="lazy"></div>
+            <span>TensorFlow</span>
+          </div>
+          <div class="skill-logo-item">
+            <div class="skill-logo-wrap"><img src="https://cdn.simpleicons.org/scikitlearn/F7931E" alt="scikit-learn" width="42" height="42" loading="lazy"></div>
+            <span>Scikit-learn</span>
+          </div>
+          <div class="skill-logo-item">
+            <div class="skill-logo-wrap"><img src="https://cdn.simpleicons.org/postgresql/4169E1" alt="SQL" width="42" height="42" loading="lazy"></div>
+            <span>SQL</span>
+          </div>
+          <div class="skill-logo-item">
+            <div class="skill-logo-wrap"><img src="https://cdn.simpleicons.org/googlecloud/4285F4" alt="GCP AIOps" width="42" height="42" loading="lazy"></div>
+            <span>AIOps / GCP</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- DevOps & Cloud -->
+      <div class="skill-category-card">
+        <div class="skill-cat-header">
+          <div class="skill-cat-icon"><i class="fas fa-server"></i></div>
+          <div>
+            <h3>DevOps &amp; Cloud</h3>
+            <span class="skill-cat-sub">9 tools powering my infrastructure work</span>
+          </div>
+        </div>
+        <div class="skill-logo-grid">
+          <div class="skill-logo-item">
+            <div class="skill-logo-wrap"><img src="https://cdn.simpleicons.org/docker/2496ED" alt="Docker" width="42" height="42" loading="lazy"></div>
+            <span>Docker</span>
+          </div>
+          <div class="skill-logo-item">
+            <div class="skill-logo-wrap"><img src="https://cdn.simpleicons.org/kubernetes/326CE5" alt="Kubernetes" width="42" height="42" loading="lazy"></div>
+            <span>Kubernetes</span>
+          </div>
+          <div class="skill-logo-item">
+            <div class="skill-logo-wrap"><img src="https://cdn.simpleicons.org/terraform/844FBA" alt="Terraform" width="42" height="42" loading="lazy"></div>
+            <span>Terraform</span>
+          </div>
+          <div class="skill-logo-item">
+            <div class="skill-logo-wrap"><img src="https://cdn.simpleicons.org/githubactions/2088FF" alt="GitHub Actions" width="42" height="42" loading="lazy"></div>
+            <span>GH Actions</span>
+          </div>
+          <div class="skill-logo-item">
+            <div class="skill-logo-wrap"><img src="images/32px-Amazon_Web_Services_Logo.svg.png" alt="AWS" width="42" height="42" loading="lazy"></div>
+            <span>AWS</span>
+          </div>
+          <div class="skill-logo-item">
+            <div class="skill-logo-wrap"><img src="https://cdn.simpleicons.org/cloudflare/F6821F" alt="Cloudflare" width="42" height="42" loading="lazy"></div>
+            <span>Cloudflare</span>
+          </div>
+          <div class="skill-logo-item">
+            <div class="skill-logo-wrap"><img src="https://cdn.simpleicons.org/prometheus/E6522C" alt="Prometheus" width="42" height="42" loading="lazy"></div>
+            <span>Prometheus</span>
+          </div>
+          <div class="skill-logo-item">
+            <div class="skill-logo-wrap"><img src="https://cdn.simpleicons.org/grafana/F46800" alt="Grafana" width="42" height="42" loading="lazy"></div>
+            <span>Grafana</span>
+          </div>
+          <div class="skill-logo-item">
+            <div class="skill-logo-wrap"><img src="https://cdn.simpleicons.org/linux/FCC624" alt="Linux" width="42" height="42" loading="lazy"></div>
+            <span>Linux</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Full-Stack & Web -->
+      <div class="skill-category-card">
+        <div class="skill-cat-header">
+          <div class="skill-cat-icon"><i class="fas fa-code"></i></div>
+          <div>
+            <h3>Front-end &amp; Web</h3>
+            <span class="skill-cat-sub">9 languages &amp; frameworks I build with</span>
+          </div>
+        </div>
+        <div class="skill-logo-grid">
+          <div class="skill-logo-item">
+            <div class="skill-logo-wrap"><img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML5" width="42" height="42" loading="lazy"></div>
+            <span>HTML5</span>
+          </div>
+          <div class="skill-logo-item">
+            <div class="skill-logo-wrap"><img src="images/32px-CSS3_logo_and_wordmark.svg.png" alt="CSS3" width="42" height="42" loading="lazy"></div>
+            <span>CSS3</span>
+          </div>
+          <div class="skill-logo-item">
+            <div class="skill-logo-wrap"><img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript" width="42" height="42" loading="lazy"></div>
+            <span>JavaScript</span>
+          </div>
+          <div class="skill-logo-item">
+            <div class="skill-logo-wrap"><img src="https://cdn.simpleicons.org/php/777BB4" alt="PHP" width="42" height="42" loading="lazy"></div>
+            <span>PHP</span>
+          </div>
+          <div class="skill-logo-item">
+            <div class="skill-logo-wrap"><img src="https://cdn.simpleicons.org/wordpress/21759B" alt="WordPress" width="42" height="42" loading="lazy"></div>
+            <span>WordPress</span>
+          </div>
+          <div class="skill-logo-item">
+            <div class="skill-logo-wrap"><img src="https://cdn.simpleicons.org/strapi/4945FF" alt="Strapi" width="42" height="42" loading="lazy"></div>
+            <span>Strapi</span>
+          </div>
+          <div class="skill-logo-item">
+            <div class="skill-logo-wrap"><img src="images/nodejs-icon-svgrepo-com.svg" alt="Next.js" width="42" height="42" loading="lazy"></div>
+            <span>Nextjs</span>
+          </div>
+          <div class="skill-logo-item">
+            <div class="skill-logo-wrap"><img src="https://cdn.simpleicons.org/flutter/54C5F8" alt="Flutter" width="42" height="42" loading="lazy"></div>
+            <span>Canva</span>
+          </div>
+          <div class="skill-logo-item">
+            <div class="skill-logo-wrap"><img src="https://cdn.simpleicons.org/figma/F24E1E" alt="Figma" width="42" height="42" loading="lazy"></div>
+            <span>Figma</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-left reveal-up">
+          <h2 class="contact-title">Let's Get<br/>In Touch</h2>
+          <a href="mailto:hello@nigel.dev" class="contact-email">maobenigel@gmail.com</a>
+          <div class="contact-socials">
+            <a href="#" class="social-link">GitHub</a>
+            <a href="#" class="social-link">LinkedIn</a>
+            <a href="#" class="social-link">Twitter</a>
+          </div>
+        </div>
+        <div class="contact-right reveal-up" style="--delay:0.15s">
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Your full name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about your project…" required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <p class="footer-copy">© 2026 Nigel. All rights reserved.</p>
+      </div>
+      <div class="footer-center">
+        <a href="#hero" class="footer-nav">Home</a>
+        <a href="#about" class="footer-nav">About</a>
+        <a href="#projects" class="footer-nav">Projects</a>
+        <a href="#contact" class="footer-nav">Contact</a>
+      </div>
+      <div class="footer-right">
+        <a href="https://github.com/maobenigel-git" class="footer-social" aria-label="GitHub">
+          <img src="https://cdn.simpleicons.org/github/ffffff" alt="GitHub" />
+        </a>
+        <a href="https://www.linkedin.com/in/nigel-maobe-105776340?utm_source=share_via&utm_content=profile&utm_medium=member_android" class="footer-social" aria-label="LinkedIn">
+          <img src="assets/linkedin_2504923.png" alt="LinkedIn" />
+        </a>
+        <a href="https://twitter.com/" class="footer-social" aria-label="Twitter">
+          <img src="assets/whatsapp_3983953.png" alt="Twitter" />
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
