@@ -122,37 +122,7 @@ const $$ = (sel) => document.querySelectorAll(sel);
 })();
 
 /* =========================================
-   5. CONTACT FORM — basic submission feedback
-   ========================================= */
-(function initContactForm() {
-  const form = $('#contactForm');
-  if (!form) return;
-
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-
-    const btn = form.querySelector('button[type="submit"]');
-    const originalText = btn.textContent;
-
-    btn.textContent = 'Message Sent ✓';
-    btn.style.background = '#111';
-    btn.style.color = '#fff';
-    btn.style.borderColor = '#111';
-    btn.disabled = true;
-
-    setTimeout(() => {
-      btn.textContent = originalText;
-      btn.style.background = '';
-      btn.style.color = '';
-      btn.style.borderColor = '';
-      btn.disabled = false;
-      form.reset();
-    }, 3000);
-  });
-})();
-
-/* =========================================
-   6. SMOOTH ANCHOR SCROLL — with header offset
+   5. SMOOTH ANCHOR SCROLL — with header offset
    ========================================= */
 (function initSmoothScroll() {
   const navHeight = parseInt(
@@ -176,7 +146,7 @@ const $$ = (sel) => document.querySelectorAll(sel);
 })();
 
 /* =========================================
-   7. CURSOR TRAIL (subtle) — adds a refined
+   6. CURSOR TRAIL (subtle) — adds a refined
       trailing dot that follows the cursor.
    ========================================= */
 (function initCursorTrail() {
@@ -257,7 +227,7 @@ const $$ = (sel) => document.querySelectorAll(sel);
 })();
 
 /* =========================================
-   8. PAGE LOAD — initial hero entrance
+   7. PAGE LOAD — initial hero entrance
    ========================================= */
 (function initPageLoad() {
   document.documentElement.style.opacity = '0';
