@@ -243,3 +243,72 @@ const $$ = (sel) => document.querySelectorAll(sel);
     });
   });
 })();
+
+/* =========================================
+   8. PROJECT MODAL — maximize gallery on mobile
+   ========================================= */
+(function initProjectModal() {
+  const modal = $('#projectModal');
+  const backdrop = $('#projectModalBackdrop');
+  const closeButton = $('#projectModalClose');
+  const gallery = $('#projectModalGallery');
+  const title = $('#projectModalTitle');
+
+  if (!modal || !backdrop || !closeButton || !gallery || !title) return;
+
+  const buttons = $$('.btn-maximize');
+  buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+      const card = button.closest('.project-card');
+      if (!card) return;
+
+      const cardsTitle = card.querySelector('.project-title')?.textContent || 'Project Gallery';
+      const mediaItems = [...card.querySelectorAll('.project-images img, .project-images video')];
+      if (!mediaItems.length) return;
+
+      gallery.innerHTML = '';
+      title.textContent = `${cardsTitle} Gallery`;
+
+      mediaItems.forEach((media, index) => {
+        const item = document.createElement('div');
+        item.className = 'project-modal-item';
+
+        if (media.tagName === 'IMG') {
+          const img = document.createElement('img');
+          img.src = media.src;
+          img.alt = media.alt || `${cardsTitle} screenshot ${index + 1}`;
+          item.appendChild(img);
+        } else if (media.tagName === 'VIDEO') {
+          const video = document.createElement('video');
+          const source = media.querySelector('source');
+          video.src = source ? source.src : media.currentSrc || media.src || '';
+          video.controls = true;
+          video.autoplay = false;
+          video.playsInline = true;
+          item.appendChild(video);
+        }
+
+        gallery.appendChild(item);
+      });
+
+      modal.classList.add('active');
+      modal.setAttribute('aria-hidden', 'false');
+      document.body.classList.add('modal-open');
+    });
+  });
+
+  const closeModal = () => {
+    modal.classList.remove('active');
+    modal.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('modal-open');
+    gallery.innerHTML = '';
+  };
+
+  closeButton.addEventListener('click', closeModal);
+  backdrop.addEventListener('click', closeModal);
+  window.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && modal.classList.contains('active')) {
+      closeModal();
+    }
+  });
+})();
